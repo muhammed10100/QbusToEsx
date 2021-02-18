@@ -175,7 +175,7 @@ QBCore.Functions.TriggerCallback()
 ESX.TriggerServerCallback()
 ```
 --------------------------------------------------------------------------------------------------
-**-- qb'de cid esx'de identifier kullanılıyor olayı çözmeniz için ufak bir kod bloğu bıraktık.**
+-- qb'de cid esx'de identifier kullanılıyor olayı çözmeniz için ufak bir kod bloğu bırakıldı.
 ```lua
 QBCore.Functions.CreateCallback('system:fetchStatus', function(source, cb)
     local Player = QBCore.Functions.GetPlayer(source)
@@ -228,6 +228,7 @@ ESX.RegisterServerCallback("system:fetchStatus", function(source, cb)
 end)
 ```
 --------------------------------------------------------------------------------------------------
+Sql bağlama kısmı
 ```lua
 QBCore.Functions.ExecuteSql()
 ```
@@ -239,6 +240,7 @@ ESX.ExecuteSql() --(ghmattimysql)
 MySQL.Async.execute()
 ```
 --------------------------------------------------------------------------------------------------
+RegisterCommand - yani chat komut kısmı.
 ```lua
 QBCore.Commands.Add()
 ```
