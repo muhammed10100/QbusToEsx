@@ -1,5 +1,6 @@
-# QbusToEsx
-
+# QbusToEsx Qbus Scriptleri ESX e Çevirme.
+--------------------------------------------------------------------------------------------------
+ ```lua
 QBCore = nil 
 
 Citizen.CreateThread(function()
@@ -8,8 +9,11 @@ Citizen.CreateThread(function()
 		Citizen.Wait(31)
 	end
 end)
+```
+**ÜSTEKİ QBUSCORE
 
-
+ALTAKİ ESX**
+```lua
 ESX = nil
 
 Citizen.CreateThread(function()
@@ -18,63 +22,128 @@ Citizen.CreateThread(function()
     Citizen.Wait(31)
   end
 end)
------------------------------------------------------------
+```
+--------------------------------------------------------------------------------------------------
+```lua
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded', 
-    
-  RegisterNetEvent('esx:playerLoaded')
-AddEventHandler('esx:playerLoaded',   
---------------------------------------------------------------------
+```
+**ÜSTEKİ QBUSCORE
+
+ALTAKİ ESX**
+```lua
+RegisterNetEvent('esx:playerLoaded')
+AddEventHandler('esx:playerLoaded',
+```
+--------------------------------------------------------------------------------------------------
+```lua
 RegisterNetEvent('QBCore:Client:OnJobUptade')
 AddEventHandler('QBCore:Client:OnJobUptade', 
+```
+**ÜSTEKİ QBUSCORE
 
+ALTAKİ ESX**
+```lua
 RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob',
----------------------------------------------------------------------
+```
+--------------------------------------------------------------------------------------------------
+```lua
 QBCore.Functions.DrawText3D(1, 1, 1, 'Örnek')
+```
+**ÜSTEKİ QBUSCORE
 
+ALTAKİ ESX**
+```lua
 DrawText3D(1, 1, 1, 'Örnek') -- (aşağısına function açmanız gerekmektedir.)
---------------------------------------------------------------------------------
+```
+--------------------------------------------------------------------------------------------------
+```lua
 QBCore.UI.Menu.Open
 QBCore.UI.Menu.CloseAll() -- (menu default scripti kurmanız gerekmektedir.)
+```
+**ÜSTEKİ QBUSCORE
 
+ALTAKİ ESX**
+```lua
 ESX.UI.Menu.Open
 ESX.UI.Menu.CloseAll()
-----------------------------------------------------------------------------------------
-QBCore.Functions.Notify("Araç kitlendi.", "error")
-
-TriggerEvent('Notification',"Örnek.")
-----------------------------------------------------------------------------------------
-xPlayer.Functions.GetItemByName 
-
-xPlayer.getInventoryItem
----------------------------------------------------------------------------------------
-xPlayer.Functions.RemoveItem 
-
-xPlayer.removeInventoryItem 
--------------------------------------------------------------------------------------------
-xPlayer.Functions.AddItem
-
-xPlayer.addInventoryItem
-----------------------------------------------------------------------------------------
-QBCore.Functions.GetPlayer(src)
-
-ESX.GetPlayerFromId(src)
+```
 --------------------------------------------------------------------------------------------------
+```lua
+QBCore.Functions.Notify("Araç kitlendi.", "error")
+```
+**ÜSTEKİ QBUSCORE
+
+ALTAKİ ESX**
+```lua
+TriggerEvent('Notification',"Örnek.")
+```
+--------------------------------------------------------------------------------------------------
+```lua
+xPlayer.Functions.GetItemByName 
+```
+**ÜSTEKİ QBUSCORE
+
+ALTAKİ ESX**
+```lua
+xPlayer.getInventoryItem
+```
+--------------------------------------------------------------------------------------------------
+```lua
+xPlayer.Functions.RemoveItem 
+```
+**ÜSTEKİ QBUSCORE
+
+ALTAKİ ESX**
+```lua
+xPlayer.removeInventoryItem 
+```
+--------------------------------------------------------------------------------------------------
+```lua
+xPlayer.Functions.AddItem
+```
+**ÜSTEKİ QBUSCORE
+
+ALTAKİ ESX**
+```lua
+xPlayer.addInventoryItem
+```
+--------------------------------------------------------------------------------------------------
+```lua
+QBCore.Functions.GetPlayer(src)
+```
+**ÜSTEKİ QBUSCORE
+
+ALTAKİ ESX**
+```lua
+ESX.GetPlayerFromId(src)
+```
+--------------------------------------------------------------------------------------------------
+```lua
 QBCore.Functions.SpawnVehicle()
 QBCore.Functions.GetVehicleProperties()
 QBCore.Functions.GetClosestVehicle()
+```
+**ÜSTEKİ QBUSCORE
 
-
+ALTAKİ ESX**
+```lua
 ESX.Game.SpawnVehicle()
 ESX.Game.GetVehicleProperties()
 ESX.Game.GetClosestVehicle()
-
+```
 --(Eğer ESX.Game olan neredeyse her şey QBCore.Functions olarak aynı şekildedir.)
 ------------------------------------------------------------------------------------------------------
+```lua
 QBCore.Functions.GetPlayerData()
+```
+**ÜSTEKİ QBUSCORE
 
+ALTAKİ ESX**
+```lua
 ESX.GetPlayerData()
+```
 ---------------------------------------------------------------------------------------------------
 QBCore.Functions.CreateUseableItem()
 
@@ -88,7 +157,8 @@ QBCore.Functions.TriggerCallback()
 
 ESX.TriggerServerCallback()
 -----------------------------------------------------------------------------------------------------------
--- qb'de cid esx'de identifier kullanılıyor olayı çözmeniz için ufak bir kod bloğu bıraktık.
+**-- qb'de cid esx'de identifier kullanılıyor olayı çözmeniz için ufak bir kod bloğu bıraktık.**
+```lua
 QBCore.Functions.CreateCallback('system:fetchStatus', function(source, cb)
     local Player = QBCore.Functions.GetPlayer(source)
 
@@ -106,7 +176,10 @@ QBCore.Functions.CreateCallback('system:fetchStatus', function(source, cb)
           cb()
      end
 end)
+```
 
+
+```lua
 ESX.RegisterServerCallback("system:fetchStatus", function(source, cb)
     local src = source
     local user = ESX.GetPlayerFromId(src)
@@ -134,14 +207,20 @@ ESX.RegisterServerCallback("system:fetchStatus", function(source, cb)
 
     end)
 end)
+```
 -----------------------------------------------------------------------------------------------------------------------
+```lua
 QBCore.Functions.ExecuteSql()
+```
 
+```lua
 ESX.ExecuteSql() --(ghmattimysql)
 MySQL.Async.execute()
+```
 ----------------------------------------------------------------------------------------------------------------------
 QBCore.Commands.Add()
-
+```lua
 RegisterCommand 
+```
 -- (RegisterCommand qbcore'da da çalışır.)
 ----------------------------------------------------------------------------------------------------------------------
