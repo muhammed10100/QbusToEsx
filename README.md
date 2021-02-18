@@ -1,12 +1,13 @@
 # QbusToEsx Qbus Scriptleri ESX e Çevirme.
 --------------------------------------------------------------------------------------------------
+Qbus Temeli Ve ESX temeli.
  ```lua
 QBCore = nil 
 
 Citizen.CreateThread(function()
 	while QBCore == nil do
 		TriggerEvent('QBCore:GetObject', function(obj) QBCore = obj end)
-		Citizen.Wait(31)
+		Citizen.Wait(30) -- Saniye Bekletme
 	end
 end)
 ```
@@ -19,11 +20,12 @@ ESX = nil
 Citizen.CreateThread(function()
   while ESX == nil do
     TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-    Citizen.Wait(31)
+    Citizen.Wait(30)-- Saniye Bekletme
   end
 end)
 ```
 --------------------------------------------------------------------------------------------------
+Oyuncu Giriş Kısmı İlik Oyuna Girerken Lazım, Yani Server Dosyasıdır.
 ```lua
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded', 
@@ -36,6 +38,7 @@ RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded',
 ```
 --------------------------------------------------------------------------------------------------
+Server Dosyası, Job Kısmı Meslek Kısmıdır.
 ```lua
 RegisterNetEvent('QBCore:Client:OnJobUptade')
 AddEventHandler('QBCore:Client:OnJobUptade', 
@@ -48,6 +51,7 @@ RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob',
 ```
 --------------------------------------------------------------------------------------------------
+3D li Yazı Ekleme, Cilent Dosyası. Örnek : https://media.discordapp.net/attachments/623207764314816562/812096508786507806/resim_1.png
 ```lua
 QBCore.Functions.DrawText3D(1, 1, 1, 'Örnek')
 ```
@@ -58,6 +62,7 @@ QBCore.Functions.DrawText3D(1, 1, 1, 'Örnek')
 DrawText3D(1, 1, 1, 'Örnek') -- (aşağısına function açmanız gerekmektedir.)
 ```
 --------------------------------------------------------------------------------------------------
+Menu Aç Kapat ESX & QBCore De Ki Menüler Örnekler : https://prnt.sc/u4f7s5
 ```lua
 QBCore.UI.Menu.Open
 QBCore.UI.Menu.CloseAll() -- (menu default scripti kurmanız gerekmektedir.)
@@ -70,6 +75,7 @@ ESX.UI.Menu.Open
 ESX.UI.Menu.CloseAll()
 ```
 --------------------------------------------------------------------------------------------------
+Bildirim Scripti Örnek : https://dosya.turkmmo.com/2020/09/36521_efa54848705a4069cbedfc2770e50cf1.png
 ```lua
 QBCore.Functions.Notify("Araç kitlendi.", "error")
 ```
@@ -80,6 +86,7 @@ QBCore.Functions.Notify("Araç kitlendi.", "error")
 TriggerEvent('Notification',"Örnek.")
 ```
 --------------------------------------------------------------------------------------------------
+Enventer İtem Kısmı.
 ```lua
 xPlayer.Functions.GetItemByName 
 ```
@@ -90,6 +97,7 @@ xPlayer.Functions.GetItemByName
 xPlayer.getInventoryItem
 ```
 --------------------------------------------------------------------------------------------------
+Envanter İtem Silme Kısmı.
 ```lua
 xPlayer.Functions.RemoveItem 
 ```
@@ -100,6 +108,7 @@ xPlayer.Functions.RemoveItem
 xPlayer.removeInventoryItem 
 ```
 --------------------------------------------------------------------------------------------------
+Envanter İtem Ekleme Kısmı.
 ```lua
 xPlayer.Functions.AddItem
 ```
@@ -110,6 +119,7 @@ xPlayer.Functions.AddItem
 xPlayer.addInventoryItem
 ```
 --------------------------------------------------------------------------------------------------
+Karakter Kımsı Oyuncunun İd Si Gibi Birşey.
 ```lua
 QBCore.Functions.GetPlayer(src)
 ```
@@ -120,6 +130,7 @@ QBCore.Functions.GetPlayer(src)
 ESX.GetPlayerFromId(src)
 ```
 --------------------------------------------------------------------------------------------------
+Araba Spawn Kısmı Konumu Vsb Şeyler.
 ```lua
 QBCore.Functions.SpawnVehicle()
 QBCore.Functions.GetVehicleProperties()
@@ -135,6 +146,7 @@ ESX.Game.GetClosestVehicle()
 ```
 --(Eğer ESX.Game olan neredeyse her şey QBCore.Functions olarak aynı şekildedir.)
 --------------------------------------------------------------------------------------------------
+Oyuncu Kendi Karakterin.
 ```lua
 QBCore.Functions.GetPlayerData()
 ```
@@ -145,6 +157,7 @@ QBCore.Functions.GetPlayerData()
 ESX.GetPlayerData()
 ```
 --------------------------------------------------------------------------------------------------
+İtem Oluşturma.
 ```lua
 QBCore.Functions.CreateUseableItem()
 ```
@@ -155,6 +168,7 @@ QBCore.Functions.CreateUseableItem()
 ESX.RegisterUsableItem()
 ```
 --------------------------------------------------------------------------------------------------
+Dosya'lar İle Alakalı.
 ```lua
 QBCore.Functions.CreateCallback()
 ```
@@ -165,6 +179,7 @@ QBCore.Functions.CreateCallback()
 ESX.RegisterServerCallback()
 ```
 --------------------------------------------------------------------------------------------------
+Dosya'lar İle Alakalı.
 ```lua
 QBCore.Functions.TriggerCallback()
 ```
@@ -175,7 +190,7 @@ QBCore.Functions.TriggerCallback()
 ESX.TriggerServerCallback()
 ```
 --------------------------------------------------------------------------------------------------
--- qb'de cid esx'de identifier kullanılıyor olayı çözmeniz için ufak bir kod bloğu bırakıldı.
+qb'de cid esx'de identifier kullanılıyor olayı çözmeniz için ufak bir kod bloğu bıraktım.
 ```lua
 QBCore.Functions.CreateCallback('system:fetchStatus', function(source, cb)
     local Player = QBCore.Functions.GetPlayer(source)
