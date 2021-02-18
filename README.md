@@ -10,9 +10,9 @@ Citizen.CreateThread(function()
 	end
 end)
 ```
-#ÜSTEKİ QBUSCORE
+# ÜSTEKİ QBUSCORE
 
-#ALTAKİ ESX
+# ALTAKİ ESX
 ```lua
 ESX = nil
 
@@ -28,9 +28,9 @@ end)
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded', 
 ```
-#ÜSTEKİ QBUSCORE
+# ÜSTEKİ QBUSCORE
 
-#ALTAKİ ESX
+# ALTAKİ ESX
 ```lua
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded',
@@ -40,9 +40,9 @@ AddEventHandler('esx:playerLoaded',
 RegisterNetEvent('QBCore:Client:OnJobUptade')
 AddEventHandler('QBCore:Client:OnJobUptade', 
 ```
-#ÜSTEKİ QBUSCORE
+# ÜSTEKİ QBUSCORE
 
-#ALTAKİ ESX
+# ALTAKİ ESX
 ```lua
 RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob',
@@ -51,9 +51,9 @@ AddEventHandler('esx:setJob',
 ```lua
 QBCore.Functions.DrawText3D(1, 1, 1, 'Örnek')
 ```
-#ÜSTEKİ QBUSCORE
+# ÜSTEKİ QBUSCORE
 
-#ALTAKİ ESX
+# ALTAKİ ESX
 ```lua
 DrawText3D(1, 1, 1, 'Örnek') -- (aşağısına function açmanız gerekmektedir.)
 ```
@@ -62,9 +62,9 @@ DrawText3D(1, 1, 1, 'Örnek') -- (aşağısına function açmanız gerekmektedir
 QBCore.UI.Menu.Open
 QBCore.UI.Menu.CloseAll() -- (menu default scripti kurmanız gerekmektedir.)
 ```
-#ÜSTEKİ QBUSCORE
+# ÜSTEKİ QBUSCORE
 
-#ALTAKİ ESX
+# ALTAKİ ESX
 ```lua
 ESX.UI.Menu.Open
 ESX.UI.Menu.CloseAll()
@@ -73,9 +73,9 @@ ESX.UI.Menu.CloseAll()
 ```lua
 QBCore.Functions.Notify("Araç kitlendi.", "error")
 ```
-#ÜSTEKİ QBUSCORE
+# ÜSTEKİ QBUSCORE
 
-#ALTAKİ ESX
+# ALTAKİ ESX
 ```lua
 TriggerEvent('Notification',"Örnek.")
 ```
@@ -83,9 +83,9 @@ TriggerEvent('Notification',"Örnek.")
 ```lua
 xPlayer.Functions.GetItemByName 
 ```
-#ÜSTEKİ QBUSCORE
+# ÜSTEKİ QBUSCORE
 
-#ALTAKİ ESX
+# ALTAKİ ESX
 ```lua
 xPlayer.getInventoryItem
 ```
@@ -93,9 +93,9 @@ xPlayer.getInventoryItem
 ```lua
 xPlayer.Functions.RemoveItem 
 ```
-#ÜSTEKİ QBUSCORE
+# ÜSTEKİ QBUSCORE
 
-#ALTAKİ ESX
+# ALTAKİ ESX
 ```lua
 xPlayer.removeInventoryItem 
 ```
@@ -103,9 +103,9 @@ xPlayer.removeInventoryItem
 ```lua
 xPlayer.Functions.AddItem
 ```
-#ÜSTEKİ QBUSCORE
+# ÜSTEKİ QBUSCORE
 
-#ALTAKİ ESX
+# ALTAKİ ESX
 ```lua
 xPlayer.addInventoryItem
 ```
@@ -113,9 +113,9 @@ xPlayer.addInventoryItem
 ```lua
 QBCore.Functions.GetPlayer(src)
 ```
-#ÜSTEKİ QBUSCORE
+# ÜSTEKİ QBUSCORE
 
-#ALTAKİ ESX
+# ALTAKİ ESX
 ```lua
 ESX.GetPlayerFromId(src)
 ```
@@ -125,38 +125,56 @@ QBCore.Functions.SpawnVehicle()
 QBCore.Functions.GetVehicleProperties()
 QBCore.Functions.GetClosestVehicle()
 ```
-#ÜSTEKİ QBUSCORE
+# ÜSTEKİ QBUSCORE
 
-#ALTAKİ ESX
+# ALTAKİ ESX
 ```lua
 ESX.Game.SpawnVehicle()
 ESX.Game.GetVehicleProperties()
 ESX.Game.GetClosestVehicle()
 ```
 --(Eğer ESX.Game olan neredeyse her şey QBCore.Functions olarak aynı şekildedir.)
-------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
 ```lua
 QBCore.Functions.GetPlayerData()
 ```
-#ÜSTEKİ QBUSCORE
+# ÜSTEKİ QBUSCORE
 
-#ALTAKİ ESX
+# ALTAKİ ESX
 ```lua
 ESX.GetPlayerData()
 ```
----------------------------------------------------------------------------------------------------
-QBCore.Functions.CreateUseableItem()
-
-ESX.RegisterUsableItem()
 --------------------------------------------------------------------------------------------------
+```lua
+QBCore.Functions.CreateUseableItem()
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+ESX.RegisterUsableItem()
+```
+--------------------------------------------------------------------------------------------------
+```lua
 QBCore.Functions.CreateCallback()
+```
+# ÜSTEKİ QBUSCORE
 
+# ALTAKİ ESX
+```lua
 ESX.RegisterServerCallback()
------------------------------------------------------------------------------------------------------------
+```
+--------------------------------------------------------------------------------------------------
+```lua
 QBCore.Functions.TriggerCallback()
+```
+# ÜSTEKİ QBUSCORE
 
+# ALTAKİ ESX
+```lua
 ESX.TriggerServerCallback()
------------------------------------------------------------------------------------------------------------
+```
+--------------------------------------------------------------------------------------------------
 **-- qb'de cid esx'de identifier kullanılıyor olayı çözmeniz için ufak bir kod bloğu bıraktık.**
 ```lua
 QBCore.Functions.CreateCallback('system:fetchStatus', function(source, cb)
@@ -177,8 +195,9 @@ QBCore.Functions.CreateCallback('system:fetchStatus', function(source, cb)
      end
 end)
 ```
+# ÜSTEKİ QBUSCORE
 
-
+# ALTAKİ ESX
 ```lua
 ESX.RegisterServerCallback("system:fetchStatus", function(source, cb)
     local src = source
@@ -208,19 +227,26 @@ ESX.RegisterServerCallback("system:fetchStatus", function(source, cb)
     end)
 end)
 ```
------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
 ```lua
 QBCore.Functions.ExecuteSql()
 ```
+# ÜSTEKİ QBUSCORE
 
+# ALTAKİ ESX
 ```lua
 ESX.ExecuteSql() --(ghmattimysql)
 MySQL.Async.execute()
 ```
-----------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+```lua
 QBCore.Commands.Add()
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
 ```lua
 RegisterCommand 
 ```
 -- (RegisterCommand qbcore'da da çalışır.)
-----------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
