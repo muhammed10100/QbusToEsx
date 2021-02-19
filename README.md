@@ -267,3 +267,16 @@ RegisterCommand
 ```
 -- (RegisterCommand qbcore'da da çalışır.)
 --------------------------------------------------------------------------------------------------
+Karakter Kısmı Dır Data Sına Bağlama.
+```lua
+local Player = QBCore.Functions.GetPlayer(source)
+['@citizenid'] = Player.PlayerData.citizenid
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+local user : ESX.Get.PlayerFromId(src)
+["@identifier"] = user.identifier
+```
+--------------------------------------------------------------------------------------------------
