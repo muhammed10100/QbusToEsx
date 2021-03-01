@@ -52,6 +52,8 @@ AddEventHandler('esx:setJob',
 ```
 --------------------------------------------------------------------------------------------------
 Beyler Bu kısım Yoktu eklendi.
+Anlamı:
+Bu olay, oyuncu sunucuya bağlandığında tetiklenir
 ```lua
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
 AddEventHandler('QBCore:Client:OnPlayerLoaded',
