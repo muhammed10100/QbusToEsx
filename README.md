@@ -51,6 +51,19 @@ RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob',
 ```
 --------------------------------------------------------------------------------------------------
+Beyler Bu kısım Yoktu eklendi.
+```lua
+RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
+AddEventHandler('QBCore:Client:OnPlayerLoaded',
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+RegisterNetEvent('esx:playerLoaded')
+AddEventHandler('esx:playerLoaded',
+```
+--------------------------------------------------------------------------------------------------
 3D li Yazı Ekleme, Cilent Dosyası. Örnek : https://media.discordapp.net/attachments/623207764314816562/812096508786507806/resim_1.png
 ```lua
 QBCore.Functions.DrawText3D(1, 1, 1, 'Örnek')
