@@ -121,8 +121,8 @@ ply.Functions.RemoveMoney('cash', amount, "Bank depost") -- üstündeki para
 
 # ALTAKİ ESX
 ```lua
-xPlayer.removeAccountMoney('bank', tonumber(amountt)) --para kaldırma
-zPlayer.addAccountMoney('bank', tonumber(amountt)) -- para ekleme
+xPlayer.removeAccountMoney('bank', amount) --para kaldırma
+xPlayer.addMoney(amount) -- para ekleme
 ```
 --------------------------------------------------------------------------------------------------
 Para Kısmı Data.
