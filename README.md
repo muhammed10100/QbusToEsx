@@ -112,7 +112,20 @@ xPlayer.Functions.GetItemByName
 xPlayer.getInventoryItem
 ```
 --------------------------------------------------------------------------------------------------
-Para Kısmı.
+Para Ver Para Al Kısmı
+```lua
+ply.Functions.AddMoney('bank', amount, "Bank depost") -- banka
+ply.Functions.RemoveMoney('cash', amount, "Bank depost") -- üstündeki para
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+xPlayer.removeAccountMoney('bank', tonumber(amountt)) --para kaldırma
+zPlayer.addAccountMoney('bank', tonumber(amountt)) -- para ekleme
+```
+--------------------------------------------------------------------------------------------------
+Para Kısmı Data.
 ```lua
 ply.PlayerData.money["bank"]
 ```
