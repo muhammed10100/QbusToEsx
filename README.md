@@ -112,6 +112,17 @@ xPlayer.Functions.GetItemByName
 xPlayer.getInventoryItem
 ```
 --------------------------------------------------------------------------------------------------
+Para Kısmı.
+```lua
+ply.PlayerData.money["bank"]
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+xPlayer.getAccount('bank').money
+```
+--------------------------------------------------------------------------------------------------
 Envanter İtem Silme Kısmı.
 ```lua
 xPlayer.Functions.RemoveItem 
