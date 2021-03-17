@@ -66,6 +66,19 @@ RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded',
 ```
 --------------------------------------------------------------------------------------------------
+Beyler Bu kısım Yoktu eklendi.
+Anlamı:
+Bu işlev, en yakın oyuncu istemci kimliğini ve oynatıcıya olan mesafeyi alır.
+```lua
+QBCore.Functions.GetClosestPlayer()
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+ESX.Game.GetClosestPlayer()
+```
+--------------------------------------------------------------------------------------------------
 3D li Yazı Ekleme, Cilent Dosyası. Örnek : https://media.discordapp.net/attachments/623207764314816562/812096508786507806/resim_1.png
 ```lua
 QBCore.Functions.DrawText3D(1, 1, 1, 'Örnek')
