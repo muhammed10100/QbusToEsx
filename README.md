@@ -220,18 +220,6 @@ QBCore.Functions.CreateUseableItem()
 ESX.RegisterUsableItem()
 ```
 --------------------------------------------------------------------------------------------------
-Bu işlev bir öğe etiketi döndürür.
-İtem Şahsına Özel Police Job gibi benzeri bir kod.
-```lua
-Player.Functions.GetItemByName()
-```
-# ÜSTEKİ QBUSCORE
-
-# ALTAKİ ESX
-```lua
-ESX.GetItemLabel(money)
-```
---------------------------------------------------------------------------------------------------
 Banka Para Kaldırma.
 ```lua
 Player.Functions.RemoveMoney()
