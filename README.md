@@ -125,6 +125,17 @@ xPlayer.Functions.GetItemByName
 xPlayer.getInventoryItem
 ```
 --------------------------------------------------------------------------------------------------
+Job Ayarlama Kısmı Kodu.
+```lua
+Player.PlayerData.job.name 
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+ESX.PlayerData.job.name
+```
+--------------------------------------------------------------------------------------------------
 Para Ver Para Al Kısmı
 ```lua
 ply.Functions.AddMoney('bank', amount, "Bank depost") -- banka
