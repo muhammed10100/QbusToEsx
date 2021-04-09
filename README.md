@@ -193,6 +193,22 @@ QBCore.Functions.GetPlayer(src)
 ESX.GetPlayerFromId(src)
 ```
 --------------------------------------------------------------------------------------------------
+Bu işlev, tüm sondaki beyaz boşlukları kaldırarak bir metni kırpar. Genellikle `GetVehicleNumberPlateText()` yerlileri dezenfekte ederken kullanılır.
+#örnek
+```lua
+QBCore.Functions.MathTrim(GetVehicleNumberPlateText(vehicle))
+````
+#standart
+```lua
+QBCore.Functions.MathTrim 
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+ESX.Math.Trim(value)
+```
+--------------------------------------------------------------------------------------------------
 Nill buşta bilinmiyor güncelencek
 # ÖRNEK
 ```lua
