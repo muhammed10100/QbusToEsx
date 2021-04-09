@@ -193,6 +193,31 @@ QBCore.Functions.GetPlayer(src)
 ESX.GetPlayerFromId(src)
 ```
 --------------------------------------------------------------------------------------------------
+Nill buşta bilinmiyor güncelencek
+# ÖRNEK
+```lua
+QBCore.Functions.MathRound(GetVehicleBodyHealth(vehicle), 1),
+```
+#standart
+```lua
+QBCore.Functions.MathRound()
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+# ÖRNEK
+```lua
+local deger - 5.444
+
+print ('deger:' .. değer) - 5.444 -- döndürür
+print ('deger yuvarlandı:' .. ESX.Math.Round(deger)) -- 5 döndürür
+print ('deger yuvarlandı:' .. ESX.Math.Round(deger, 1)) -- 5,4 döndürür
+```
+#standart
+```lua
+ESX.Math.Round(değer, numaraOndalıkBasamaklar)
+```
+--------------------------------------------------------------------------------------------------
 Araba Spawn Kısmı Konumu Vsb Şeyler.
 ```lua
 QBCore.Functions.SpawnVehicle()
