@@ -25,10 +25,13 @@ Citizen.CreateThread(function()
 end)
 ```
 --------------------------------------------------------------------------------------------------
+Beyler Bu kısım Yoktu eklendi.
+Anlamı:
 Oyuncu Giriş Kısmı İlik Oyuna Girerken Lazım, Yani Server Dosyasıdır.
+Bu olay, oyuncu sunucuya bağlandığında tetiklenir
 ```lua
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
-AddEventHandler('QBCore:Client:OnPlayerLoaded', 
+AddEventHandler('QBCore:Client:OnPlayerLoaded',
 ```
 # ÜSTEKİ QBUSCORE
 
@@ -49,21 +52,6 @@ AddEventHandler('QBCore:Client:OnJobUptade',
 ```lua
 RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob',
-```
---------------------------------------------------------------------------------------------------
-Beyler Bu kısım Yoktu eklendi.
-Anlamı:
-Bu olay, oyuncu sunucuya bağlandığında tetiklenir
-```lua
-RegisterNetEvent('QBCore:Client:OnPlayerLoaded')
-AddEventHandler('QBCore:Client:OnPlayerLoaded',
-```
-# ÜSTEKİ QBUSCORE
-
-# ALTAKİ ESX
-```lua
-RegisterNetEvent('esx:playerLoaded')
-AddEventHandler('esx:playerLoaded',
 ```
 --------------------------------------------------------------------------------------------------
 Beyler Bu kısım Yoktu eklendi.
