@@ -54,6 +54,20 @@ RegisterNetEvent('esx:setJob')
 AddEventHandler('esx:setJob',
 ```
 --------------------------------------------------------------------------------------------------
+Burdan Kontrol Edebilrsiniz.
+https://esx-framework.github.io/es_extended/common/events/onplayerdeath/#example-client-side-usage
+```lua
+RegisterNetEvent('QBCore:Client:OnPlayerUnload')
+AddEventHandler('QBCore:Client:OnPlayerUnload',
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+RegisterNetEvent('esx:onPlayerDeath')
+AddEventHandler('esx:onPlayerDeath',
+```
+--------------------------------------------------------------------------------------------------
 Beyler Bu kısım Yoktu eklendi.
 Anlamı:
 Bu işlev, en yakın oyuncu istemci kimliğini ve oynatıcıya olan mesafeyi alır.
