@@ -127,15 +127,32 @@ xPlayer.Functions.GetItemByName
 xPlayer.getInventoryItem
 ```
 --------------------------------------------------------------------------------------------------
-Job Ayarlama Kısmı Kodu.
+Enventer İtem Kısmı.
 ```lua
-Player.PlayerData.job.name 
+xPlayer.Functions.GetItemByName 
 ```
 # ÜSTEKİ QBUSCORE
 
 # ALTAKİ ESX
 ```lua
-ESX.PlayerData.job.name
+xPlayer.getInventoryItem
+```
+--------------------------------------------------------------------------------------------------
+Job Başlangıç kod.
+```lua
+RegisterNetEvent('QBCore:Client:OnJobUpdate')
+AddEventHandler('QBCore:Client:OnJobUpdate', function(job)
+    PlayerData.job = job
+end)
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+RegisterNetEvent('esx:setJob')
+AddEventHandler('esx:setJob', function(job)
+    PlayerData.job = job
+end)
 ```
 --------------------------------------------------------------------------------------------------
 Para Ver Para Al Kısmı
