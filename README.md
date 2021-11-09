@@ -404,13 +404,13 @@ RegisterCommand
 Karakter Kısmı Dır Data Sına Bağlama.
 ```lua
 local Player = QBCore.Functions.GetPlayer(source)
-['@citizenid'] = Player.PlayerData.citizenid
+['@citizenid'] = Player.PlayerData.citizenid -- çekme Player
 ```
 # ÜSTEKİ QBUSCORE
 
 # ALTAKİ ESX
 ```lua
-local user : ESX.Get.PlayerFromId(src)
-["@identifier"] = user.identifier
+local user = ESX.Get.PlayerFromId(src)
+["@identifier"] = user.identifier -- çekme user
 ```
 --------------------------------------------------------------------------------------------------
