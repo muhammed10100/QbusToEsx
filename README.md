@@ -11,6 +11,10 @@ Citizen.CreateThread(function()
 	end
 end)
 ```
+```lua
+	local QBCore = exports['qb-core']:GetCoreObject()
+```
+
 # ÜSTEKİ QBUSCORE
 
 # ALTAKİ ESX
