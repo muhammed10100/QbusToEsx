@@ -410,7 +410,7 @@ local Player = QBCore.Functions.GetPlayer(source)
 
 # ALTAKİ ESX
 ```lua
-local user = ESX.Get.PlayerFromId(src)
+local user = ESX.GetPlayerFromId(src)
 ["@identifier"] = user.identifier -- çekme user
 ```
 --------------------------------------------------------------------------------------------------
