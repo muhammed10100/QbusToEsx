@@ -260,6 +260,7 @@ ESX.Math.Round(değer, numaraOndalıkBasamaklar)
 Araba Spawn Kısmı Konumu Vsb Şeyler.
 ```lua
 QBCore.Functions.SpawnVehicle()
+QBCore.Functions.DeleteVehicle()
 QBCore.Functions.GetVehicleProperties()
 QBCore.Functions.GetClosestVehicle()
 ```
@@ -268,6 +269,7 @@ QBCore.Functions.GetClosestVehicle()
 # ALTAKİ ESX
 ```lua
 ESX.Game.SpawnVehicle()
+ESX.Game.DeleteVehicle()
 ESX.Game.GetVehicleProperties()
 ESX.Game.GetClosestVehicle()
 ```
