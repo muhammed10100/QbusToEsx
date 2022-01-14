@@ -216,6 +216,16 @@ QBCore.Functions.GetPlayer(src)
 ESX.GetPlayerFromId(src)
 ```
 --------------------------------------------------------------------------------------------------
+```lua
+QBCore.Functions.GetPlayerByCitizenId(src)
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+ESX.GetPlayerFromIdentifier(src)
+```
+--------------------------------------------------------------------------------------------------
 Bu işlev, tüm sondaki beyaz boşlukları kaldırarak bir metni kırpar. Genellikle `GetVehicleNumberPlateText()` yerlileri dezenfekte ederken kullanılır.
 #örnek
 ```lua
