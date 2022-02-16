@@ -498,3 +498,17 @@ local user = ESX.GetPlayerFromId(src)
 ```
 
 --------------------------------------------------------------------------------------------------
+
+```lua
+QBCore.Shared.Trim()
+QBCore.Shared.GroupDigits()
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+ESX.Math.Trim()
+ESX.Math.GroupDigits()
+```
+
+--------------------------------------------------------------------------------------------------
