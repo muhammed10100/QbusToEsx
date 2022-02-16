@@ -197,7 +197,7 @@ xPlayer.addMoney(amount) -- para ekleme
 
 Para Kısmı Data.
 ```lua
-ply.PlayerData.money["bank"]
+Player.PlayerData.money["bank"]
 ```
 # ÜSTEKİ QBUSCORE
 
