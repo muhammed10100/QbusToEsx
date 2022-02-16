@@ -524,3 +524,15 @@ ESX.Game.GetClosestObject()
 ```
 
 --------------------------------------------------------------------------------------------------
+
+```lua
+QBCore.Functions.GetVehicleInDirection()
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+ESX.Game.GetVehicleInDirection()
+```
+
+--------------------------------------------------------------------------------------------------
