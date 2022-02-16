@@ -11,6 +11,7 @@ Citizen.CreateThread(function()
 	end
 end)
 ```
+Altaki yeni olanlar için -- üsteki eski sürüm için, çalışmazise ikisinide dene...
 ```lua
 local QBCore = exports['qb-core']:GetCoreObject()
 ```
