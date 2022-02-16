@@ -104,6 +104,7 @@ QBCore.Functions.DrawText3D(1, 1, 1, 'Örnek')
 # ALTAKİ ESX
 ```lua
 DrawText3D(1, 1, 1, 'Örnek') -- (aşağısına function açmanız gerekmektedir.)
+ESX.Game.Utils.DrawText3D(1, 1, 1, 'Örnek') -- ESX bunda gerek yok zaten var, fonksiyona.
 ```
 
 --------------------------------------------------------------------------------------------------
