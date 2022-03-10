@@ -150,15 +150,14 @@ xPlayer.getInventoryItem
 ```
 --------------------------------------------------------------------------------------------------
 
-Enventer İtem Kısmı.
 ```lua
-xPlayer.Functions.GetItemByName 
+xPlayer.PlayerData.name 
 ```
 # ÜSTEKİ QBUSCORE
 
 # ALTAKİ ESX
 ```lua
-xPlayer.getInventoryItem
+xPlayer.getName()
 ```
 
 --------------------------------------------------------------------------------------------------
