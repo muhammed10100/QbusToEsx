@@ -127,6 +127,7 @@ ESX.UI.Menu.CloseAll()
 
 Bildirim Scripti Örnek : https://dosya.turkmmo.com/2020/09/36521_efa54848705a4069cbedfc2770e50cf1.png
 ```lua
+TriggerClientEvent("QBCore:Notify", "Text/Yazı", "success", 2500)
 QBCore.Functions.Notify("Araç kitlendi.", "error")
 ```
 # ÜSTEKİ QBUSCORE
