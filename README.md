@@ -254,6 +254,20 @@ QBCore.Functions.GetPlayer(src)
 ESX.GetPlayerFromId(src)
 ```
 
+
+--------------------------------------------------------------------------------------------------
+
+Tüm oyuncuları çeker.
+```lua
+QBCore.Functions.GetPlayers(src)
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+ESX.GetPlayers(src)
+```
+
 --------------------------------------------------------------------------------------------------
 
 ```lua
