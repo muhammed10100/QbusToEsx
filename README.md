@@ -217,6 +217,19 @@ xPlayer.getAccount('bank').money
 
 --------------------------------------------------------------------------------------------------
 
+
+```lua
+QBCore.Functions.IsSpawnPointClear()
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+ESX.Game.IsSpawnPointClear()
+```
+
+--------------------------------------------------------------------------------------------------
+
 Envanter İtem Silme Kısmı.
 ```lua
 xPlayer.Functions.RemoveItem 
