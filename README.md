@@ -217,7 +217,6 @@ xPlayer.getAccount('bank').money
 
 --------------------------------------------------------------------------------------------------
 
-
 ```lua
 QBCore.Functions.IsSpawnPointClear()
 ```
@@ -226,6 +225,18 @@ QBCore.Functions.IsSpawnPointClear()
 # ALTAKİ ESX
 ```lua
 ESX.Game.IsSpawnPointClear()
+```
+
+--------------------------------------------------------------------------------------------------
+
+```lua
+QBCore.Functions.SetVehicleProperties()
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+ESX.Game.SetVehicleProperties()
 ```
 
 --------------------------------------------------------------------------------------------------
