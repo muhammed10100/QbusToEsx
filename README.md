@@ -433,7 +433,7 @@ end
 --------------------------------------------------------------------------------------------------
 
 `qb-core/server/functions.lua`
-bunu qb-core de client functions.lua. atın bir boş satıra
+bunu qb-core de server functions.lua. atın bir boş satıra
 ```lua
 function QBCore.Functions.GetItemLabel(item)
 	if QBCore.UseableItems[item] ~= nil then
