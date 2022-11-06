@@ -376,6 +376,45 @@ ESX.Game.GetClosestVehicle()
 `qb-core/client/functions.lua`
 bunu qb-core de client functions.lua. atın bir boş satıra
 ```lua
+function QBCore.Functions.RequestNamedPtfxAsset(assetName, cb)
+	if not HasNamedPtfxAssetLoaded(assetName) then
+		RequestNamedPtfxAsset(assetName)
+
+		while not HasNamedPtfxAssetLoaded(assetName) do
+			Citizen.Wait(1)
+		end
+	end
+
+	if cb ~= nil then
+		cb()
+	end
+end
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+function ESX.Streaming.RequestNamedPtfxAsset(assetName, cb)
+	if not HasNamedPtfxAssetLoaded(assetName) then
+		RequestNamedPtfxAsset(assetName)
+
+		while not HasNamedPtfxAssetLoaded(assetName) do
+			Citizen.Wait(1)
+		end
+	end
+
+	if cb ~= nil then
+		cb()
+	end
+end
+```
+
+
+--------------------------------------------------------------------------------------------------
+
+`qb-core/client/functions.lua`
+bunu qb-core de client functions.lua. atın bir boş satıra
+```lua
 QBCore.Functions.DeleteObject = function(object)
 	SetEntityAsMissionEntity(object, false, true)
 	DeleteObject(object)
