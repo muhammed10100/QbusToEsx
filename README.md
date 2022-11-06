@@ -370,6 +370,27 @@ ESX.Game.GetClosestVehicle()
 ```
 --(Eğer ESX.Game olan neredeyse her şey QBCore.Functions olarak aynı şekildedir.)
 
+
+--------------------------------------------------------------------------------------------------
+
+`qb-core/client/functions.lua`
+bunu qb-core de client functions.lua. atın bir boş satıra
+```lua
+QBCore.Functions.DeleteObject = function(object)
+	SetEntityAsMissionEntity(object, false, true)
+	DeleteObject(object)
+end
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+ESX.Game.DeleteObject = function(object)
+	SetEntityAsMissionEntity(object, false, true)
+	DeleteObject(object)
+end
+```
+
 --------------------------------------------------------------------------------------------------
 
 Oyuncu Kendi Karakterin.
