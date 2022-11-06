@@ -415,7 +415,7 @@ end
 `qb-core/client/functions.lua`
 bunu qb-core de client functions.lua. atın bir boş satıra
 ```lua
-QBCore.Functions.DeleteObject = function(object)
+function QBCore.Functions.DeleteObject(object)
 	SetEntityAsMissionEntity(object, false, true)
 	DeleteObject(object)
 end
@@ -424,7 +424,7 @@ end
 
 # ALTAKİ ESX
 ```lua
-ESX.Game.DeleteObject = function(object)
+function ESX.Game.DeleteObject(object)
 	SetEntityAsMissionEntity(object, false, true)
 	DeleteObject(object)
 end
