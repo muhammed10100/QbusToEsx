@@ -445,7 +445,7 @@ end
 
 # ALTAKİ ESX
 ```lua
-ESX.GetItemLabel = function(item)
+function ESX.GetItemLabel(item)
 	if ESX.Items[item] then
 		return ESX.Items[item].label
 	end
