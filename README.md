@@ -432,6 +432,28 @@ end
 
 --------------------------------------------------------------------------------------------------
 
+`qb-core/server/functions.lua`
+bunu qb-core de client functions.lua. atın bir boş satıra
+```lua
+function QBCore.Functions.GetItemLabel(item)
+	if QBCore.UseableItems[item] ~= nil then
+		return QBCore.UseableItems[item].label
+	end
+end
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+ESX.GetItemLabel = function(item)
+	if ESX.Items[item] then
+		return ESX.Items[item].label
+	end
+end
+```
+
+--------------------------------------------------------------------------------------------------
+
 Oyuncu Kendi Karakterin.
 ```lua
 QBCore.Functions.GetPlayerData()
