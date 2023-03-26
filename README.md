@@ -53,8 +53,8 @@ AddEventHandler('esx:playerLoaded',
 
 Server Dosyası, Job Kısmı Meslek Kısmıdır.
 ```lua
-RegisterNetEvent('QBCore:Client:OnJobUptade')
-AddEventHandler('QBCore:Client:OnJobUptade', 
+RegisterNetEvent('QBCore:Client:OnJobUpdate')
+AddEventHandler('QBCore:Client:OnJobUpdade', 
 ```
 # ÜSTEKİ QBUSCORE
 
