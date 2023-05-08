@@ -370,6 +370,23 @@ ESX.Game.GetClosestVehicle()
 ```
 --(Eğer ESX.Game olan neredeyse her şey QBCore.Functions olarak aynı şekildedir.)
 
+--------------------------------------------------------------------------------------------------
+
+
+Bu kodları buraya yapıştır: `qb-core/client/functions.lua: 160` yapıştır.
+Araba Spawn Kısmı Konumu Vsb Şeyler.
+```lua
+QBCore.Functions.GetVehiclesInArea = function(coords, maxDistance) return EnumerateEntitiesWithinDistance(QBCore.Functions.GetVehicles(), false, coords, maxDistance) end
+QBCore.Functions.IsSpawnPointClear = function(coords, maxDistance) return #QBCore.Functions.GetVehiclesInArea(coords, maxDistance) == 0 end
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+ESX.Game.GetVehiclesInArea = function(coords, maxDistance) return EnumerateEntitiesWithinDistance(ESX.Game.GetVehicles(), false, coords, maxDistance) end
+ESX.Game.IsSpawnPointClear = function(coords, maxDistance) return #ESX.Game.GetVehiclesInArea(coords, maxDistance) == 0 end
+```
+--(Eğer ESX.Game olan neredeyse her şey QBCore.Functions olarak aynı şekildedir.)
 
 --------------------------------------------------------------------------------------------------
 
