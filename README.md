@@ -281,28 +281,6 @@ ESX.GetPlayerFromId(src)
 
 --------------------------------------------------------------------------------------------------
 
-**Arabanın Plakasını çekmesi için yani örnek arabanın plakası [ 01MDT34 ] gibi ise direk bu plakayı çeker.**
-**Kodu kullanacağın yer QBCore: `qb-core/client/functions.lua`**
-
-```lua
-function QBCore.Functions.GetPlate(vehicle)
-    if vehicle == 0 then return end
-    return QBCore.Shared.Trim(GetVehicleNumberPlateText(vehicle))
-end
-```
-# ÜSTEKİ QBUSCORE
-
-**Kodu kullanacağın yer ESX: `es_extended/client/functions.lua`**
-# ALTAKİ ESX
-```lua
-function ESX.GetPlate(vehicle)
-    if vehicle == 0 then return end
-    return ESX.Math.Trim(GetVehicleNumberPlateText(vehicle))
-end
-```
-
---------------------------------------------------------------------------------------------------
-
 Tüm oyuncuları çeker.
 ```lua
 QBCore.Functions.GetPlayers(src)
@@ -390,6 +368,51 @@ ESX.Game.GetVehicleProperties()
 ESX.Game.GetClosestVehicle()
 ```
 --(Eğer ESX.Game olan neredeyse her şey QBCore.Functions olarak aynı şekildedir.)
+
+
+--------------------------------------------------------------------------------------------------
+
+**Arabanın plakasını çekmesi için yani örnek arabanın plakası [ 01MDT34 ] gibi ise direk bu plakayı çeker.**
+**Kodu kullanacağın yer QBCore: `qb-core/client/functions.lua`**
+
+```lua
+function QBCore.Functions.GetPlate(vehicle)
+    if vehicle == 0 then return end
+    return QBCore.Shared.Trim(GetVehicleNumberPlateText(vehicle))
+end
+```
+# ÜSTEKİ QBUSCORE
+
+**Kodu kullanacağın yer ESX: `es_extended/client/functions.lua`**
+# ALTAKİ ESX
+```lua
+function ESX.GetPlate(vehicle)
+    if vehicle == 0 then return end
+    return ESX.Math.Trim(GetVehicleNumberPlateText(vehicle))
+end
+```
+
+--------------------------------------------------------------------------------------------------
+
+**Arabanın Modelini çeker.**
+**Kodu kullanacağın yer QBCore: `qb-core/client/functions.lua`**
+
+```lua
+function QBCore.Functions.GetVehicleLabel(vehicle)
+    if vehicle == nil or vehicle == 0 then return end
+    return GetLabelText(GetDisplayNameFromVehicleModel(GetEntityModel(vehicle)))
+end
+```
+# ÜSTEKİ QBUSCORE
+
+**Kodu kullanacağın yer ESX: `es_extended/client/functions.lua: sala gitsin en alta`**
+# ALTAKİ ESX
+```lua
+function ESX.GetVehicleLabel(vehicle)
+    if vehicle == nil or vehicle == 0 then return end
+    return GetLabelText(GetDisplayNameFromVehicleModel(GetEntityModel(vehicle)))
+end
+```
 
 --------------------------------------------------------------------------------------------------
 
