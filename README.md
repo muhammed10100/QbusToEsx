@@ -279,6 +279,27 @@ QBCore.Functions.GetPlayer(src)
 ESX.GetPlayerFromId(src)
 ```
 
+--------------------------------------------------------------------------------------------------
+
+**Arabanın Plakasını çekmesi için yani örnek arabanın plakası [ 01MDT34 ] gibi ise direk bu plakayı çeker.**
+**Kodu kullanacağın yer QBCore: `qb-core/client/functions.lua`**
+
+```lua
+function QBCore.Functions.GetPlate(vehicle)
+    if vehicle == 0 then return end
+    return QBCore.Shared.Trim(GetVehicleNumberPlateText(vehicle))
+end
+```
+# ÜSTEKİ QBUSCORE
+
+**Kodu kullanacağın yer ESX: `es_extended/client/functions.lua`**
+# ALTAKİ ESX
+```lua
+function ESX.GetPlate(vehicle)
+    if vehicle == 0 then return end
+    return ESX.Math.Trim(GetVehicleNumberPlateText(vehicle))
+end
+```
 
 --------------------------------------------------------------------------------------------------
 
