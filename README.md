@@ -194,7 +194,7 @@ Para Ver Para Al Kısmı
 ```lua
 Player.Functions.AddMoney('bank', amount, "Bank depost") -- banka
 Player.Functions.RemoveMoney('cash', amount, "Bank depost") -- üstündeki para silme
-Player.Functions.GetMoney('cash', amount, "Bank depost") -- üstündeki para
+Player.Functions.GetMoney('cash') -- üstündeki para "cash" - "bank" - "blackmoney"
 ```
 # ÜSTEKİ QBUSCORE
 
