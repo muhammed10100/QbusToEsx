@@ -193,7 +193,8 @@ end)
 Para Ver Para Al Kısmı
 ```lua
 Player.Functions.AddMoney('bank', amount, "Bank depost") -- banka
-Player.Functions.RemoveMoney('cash', amount, "Bank depost") -- üstündeki para
+Player.Functions.RemoveMoney('cash', amount, "Bank depost") -- üstündeki para silme
+Player.Functions.GetMoney('cash', amount, "Bank depost") -- üstündeki para
 ```
 # ÜSTEKİ QBUSCORE
 
@@ -201,6 +202,7 @@ Player.Functions.RemoveMoney('cash', amount, "Bank depost") -- üstündeki para
 ```lua
 xPlayer.removeAccountMoney('bank', amount) --para kaldırma
 xPlayer.addMoney(amount) -- para ekleme
+xPlayer.getMoney() -- üstündeki para
 ```
 
 --------------------------------------------------------------------------------------------------
