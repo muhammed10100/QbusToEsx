@@ -156,6 +156,7 @@ xPlayer.Functions.GetItemByName
 # ALTAKİ ESX
 ```lua
 xPlayer.getInventoryItem
+xPlayer.getQuantity
 ```
 --------------------------------------------------------------------------------------------------
 
