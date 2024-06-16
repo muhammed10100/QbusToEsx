@@ -76,8 +76,8 @@ AddEventHandler('QBCore:Client:OnPlayerUnload',
 # ALTAKİ ESX
 
 ```lua
-RegisterNetEvent('esx:onPlayerDeath')
-AddEventHandler('esx:onPlayerDeath',
+RegisterNetEvent('esx:restoreLoadout')
+AddEventHandler('esx:restoreLoadout',
 ```
 
 --------------------------------------------------------------------------------------------------
