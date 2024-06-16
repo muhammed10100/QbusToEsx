@@ -67,11 +67,26 @@ AddEventHandler('esx:setJob',
 
 --------------------------------------------------------------------------------------------------
 
-Burdan Kontrol Edebilrsiniz.
-https://esx-framework.github.io/es_extended/common/events/onplayerdeath/#example-client-side-usage
 ```lua
 RegisterNetEvent('QBCore:Client:OnPlayerUnload')
 AddEventHandler('QBCore:Client:OnPlayerUnload',
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+
+```lua
+RegisterNetEvent('esx:onPlayerDeath')
+AddEventHandler('esx:onPlayerDeath',
+```
+
+--------------------------------------------------------------------------------------------------
+Burdan Kontrol Edebilrsiniz.
+https://esx-framework.github.io/es_extended/common/events/onplayerdeath/#example-client-side-usage
+
+```lua
+RegisterNetEvent('hospital:server:SetDeathStatus')
+AddEventHandler('hospital:server:SetDeathStatus',
 ```
 # ÜSTEKİ QBUSCORE
 
