@@ -95,6 +95,19 @@ AddEventHandler('hospital:server:SetDeathStatus',
 RegisterNetEvent('esx:onPlayerDeath')
 AddEventHandler('esx:onPlayerDeath',
 ```
+--------------------------------------------------------------------------------------------------
+Ambulance Revive Kısmıdır "TriggerEvent" İçin Kullanılır.
+
+```lua
+TriggerEvent('hospital:client:Revive')
+```
+# ÜSTEKİ QBUSCORE
+
+# ALTAKİ ESX
+```lua
+TriggerEvent('esx_ambulancejob:revive')
+```
+
 
 --------------------------------------------------------------------------------------------------
 
