@@ -186,6 +186,7 @@ xPlayer.Functions.GetItemByName
 ```lua
 xPlayer.getInventoryItem
 xPlayer.getQuantity
+xPlayer.canCarryItem
 ```
 --------------------------------------------------------------------------------------------------
 
