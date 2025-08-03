@@ -1,4 +1,4 @@
-# QbusToEsx Qbus Scriptleri ESX e Çevirme, Durmaksızın Güncell.
+# QbusToEsx Qbus - QBCORE Scriptleri ESX e Çevirme, Durmaksızın Güncell.
 # Discord : www.discord.gg/mdtyazilim
 # Discord : www.discord.gg/j6GKN9WUWT
 --------------------------------------------------------------------------------------------------
